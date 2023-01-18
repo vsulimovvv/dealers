@@ -18,21 +18,25 @@ window.addEventListener('DOMContentLoaded', () => {
   //       },
   //     });
   //   })();
-  //   // * ===== Slider
-  //   (function slider() {
-  //     const sliderEl = document.querySelector('.price-list-top__slider');
-  //     new Swiper(sliderEl, {
-  //       slidesPerView: 'auto',
-  //       centeredSlides: true,
-  //       slideToClickedSlide: true,
-  //       initialSlide: 4,
-  //       spaceBetween: 20,
-  //       navigation: {
-  //         nextEl: '.price-list-top__slider .swiper-button-next',
-  //         prevEl: '.price-list-top__slider .swiper-button-prev',
-  //       },
-  //     });
-  //   })();
+
+  // * ===== Slider
+  (function slider() {
+    const sliderEl = document.querySelectorAll('.descr__slider');
+
+    sliderEl.forEach((el) => {
+      if (el) {
+        new Swiper(el, {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          navigation: {
+            nextEl: '.descr__slider .swiper-button-next',
+            prevEl: '.descr__slider .swiper-button-prev',
+          },
+        });
+      }
+    });
+  })();
+
   // * ===== Fixed Header
   (function fixedHeader() {
     function scrollHeader() {
