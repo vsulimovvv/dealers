@@ -202,7 +202,7 @@ body.no-scroll {
 }
 
 .container {
-  max-width: 1570px;
+  max-width: 1300px;
   padding: 0px 15px;
   margin: 0 auto;
 }
@@ -910,12 +910,12 @@ body.no-scroll {
   display: grid;
   gap: 24px;
   place-items: center;
-  font-size: 20px;
+  font-size: 18px;
 }
 @media (max-width: 1570px) {
   .form-submit {
     font-size: calc(
-        18px + 2 *
+        16px + 2 *
           ((100vw - 360px) / 1210)
       );
   }
@@ -970,25 +970,25 @@ body.no-scroll {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 60px 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 @media (max-width: 1570px) {
   .footer__wrapper {
     font-size: calc(
-        7px + 13 *
+        7px + 11 *
           ((100vw - 360px) / 1210)
       );
   }
 }
 @media (max-width: 991.98px) {
   .footer__wrapper {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media (max-width: 991.98px) and (max-width: 1570px) {
   .footer__wrapper {
     font-size: calc(
-        15px + 5 *
+        15px + 3 *
           ((100vw - 360px) / 1210)
       );
   }
@@ -1091,13 +1091,13 @@ body.no-scroll {
   width: 100%;
   background-color: var(--color-white);
   z-index: 10;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
 }
 @media (max-width: 1570px) {
   .header {
     font-size: calc(
-        15px + 7 *
+        15px + 3 *
           ((100vw - 360px) / 1210)
       );
   }
@@ -1118,8 +1118,8 @@ body.no-scroll {
           justify-content: space-between;
 }
 .header__logo {
-  height: 100px;
-  width: 200px;
+  height: 77px;
+  width: 160px;
 }
 @media (max-width: 991.98px) {
   .header__logo {
@@ -1293,29 +1293,10 @@ body.no-scroll {
       -ms-flex-pack: center;
           justify-content: center;
   height: 725px;
-  padding: 48px 130px;
-  padding-left: 130px;
-  padding-right: 130px;
+  padding: 48px 0;
 }
-@media (max-width: 1570px) {
+@media (max-width: 1300px) {
   .hero__wrapper {
-    padding-left: calc(
-        0px + 130 *
-          ((100vw - 360px) / 1210)
-      );
-  }
-}
-@media (max-width: 1570px) {
-  .hero__wrapper {
-    padding-right: calc(
-        0px + 130 *
-          ((100vw - 360px) / 1210)
-      );
-  }
-}
-@media (max-width: 1570px) {
-  .hero__wrapper {
-    padding-left: calc(0px + 130 * (100vw - 991px) / 579);
     width: 75%;
   }
 }
@@ -1598,12 +1579,12 @@ body.no-scroll {
   position: relative;
   padding-left: 50px;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 26px;
 }
 @media (max-width: 1570px) {
   .contacts__link {
     font-size: calc(
-        22px + 10 *
+        18px + 8 *
           ((100vw - 360px) / 1210)
       );
   }
@@ -1892,7 +1873,7 @@ body.no-scroll {
 
 .product-card {
   line-height: 1.25;
-  font-size: 20px;
+  font-size: 18px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -1905,14 +1886,14 @@ body.no-scroll {
 @media (max-width: 1570px) {
   .product-card {
     font-size: calc(
-        7px + 13 *
+        7px + 11 *
           ((100vw - 360px) / 1210)
       );
   }
 }
 @media (max-width: 991.98px) {
   .product-card {
-    font-size: 20px;
+    font-size: 18px;
     -ms-grid-columns: auto 1fr;
     grid-template-columns: auto 1fr;
   }
@@ -1920,7 +1901,7 @@ body.no-scroll {
 @media (max-width: 991.98px) and (max-width: 1570px) {
   .product-card {
     font-size: calc(
-        16px + 4 *
+        15px + 3 *
           ((100vw - 360px) / 1210)
       );
   }
@@ -1941,19 +1922,19 @@ body.no-scroll {
   }
 }
 .product-card__left {
-  height: 380px;
+  height: 275px;
   width: 100%;
 }
 @media (max-width: 991.98px) {
   .product-card__left {
-    width: 380px;
-    height: 380px;
+    width: 275px;
+    height: 275px;
   }
 }
 @media (max-width: 991.98px) and (max-width: 1570px) {
   .product-card__left {
     width: calc(
-        175px + 205 *
+        175px + 100 *
           ((100vw - 360px) / 1210)
       );
   }
@@ -1961,7 +1942,7 @@ body.no-scroll {
 @media (max-width: 991.98px) and (max-width: 1570px) {
   .product-card__left {
     height: calc(
-        175px + 205 *
+        175px + 100 *
           ((100vw - 360px) / 1210)
       );
   }
@@ -2050,6 +2031,8 @@ body.no-scroll {
       -ms-flex-align: center;
           align-items: center;
   gap: 140px 50px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 @media (max-width: 991.98px) {
   .advantages__list {
@@ -2064,7 +2047,7 @@ body.no-scroll {
 }
 
 .advantages-item {
-  max-width: 590px;
+  max-width: 490px;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -2078,12 +2061,12 @@ body.no-scroll {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-size: 20px;
+  font-size: 17px;
 }
 @media (max-width: 1570px) {
   .advantages-item {
     font-size: calc(
-        16px + 4 *
+        15px + 2 *
           ((100vw - 360px) / 1210)
       );
   }
@@ -2094,16 +2077,14 @@ body.no-scroll {
   }
 }
 .advantages-item__top {
-  width: 350px;
-  height: 350px;
   margin-bottom: 24px;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
 }
 @media (max-width: 1570px) {
   .advantages-item__top {
     width: calc(
-        160px + 190 *
+        160px + 140 *
           ((100vw - 360px) / 1210)
       );
   }
@@ -2111,7 +2092,7 @@ body.no-scroll {
 @media (max-width: 1570px) {
   .advantages-item__top {
     height: calc(
-        160px + 190 *
+        160px + 140 *
           ((100vw - 360px) / 1210)
       );
   }
@@ -2180,12 +2161,12 @@ body.no-scroll {
   position: relative;
   padding: 50px 130px;
 }
-@media (max-width: 1570px) {
+@media (max-width: 1300px) {
   .request__wrapper {
     padding-left: 50px;
   }
 }
-@media (max-width: 1570px) and (max-width: 1570px) {
+@media (max-width: 1300px) and (max-width: 1570px) {
   .request__wrapper {
     padding-left: calc(
         0px + 50 *
@@ -2318,7 +2299,12 @@ body.no-scroll {
   display: grid;
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  gap: 100px;
+}
+@media (max-width: 1300px) {
+  .benefits__list {
+    gap: 50px;
+  }
 }
 @media (max-width: 991.98px) {
   .benefits__list {
@@ -2330,7 +2316,6 @@ body.no-scroll {
   .benefits__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    gap: 50px;
   }
 }
 .benefits .benefits-item {
@@ -2345,7 +2330,6 @@ body.no-scroll {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  height: 100%;
   font-weight: 500;
   font-size: 18px;
 }
@@ -2358,14 +2342,14 @@ body.no-scroll {
   }
 }
 .benefits .benefits-item__top {
-  width: 275px;
-  height: 275px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 30px;
 }
 @media (max-width: 1570px) {
   .benefits .benefits-item__top {
     width: calc(
-        150px + 125 *
+        100px + 50 *
           ((100vw - 360px) / 1210)
       );
   }
@@ -2373,7 +2357,7 @@ body.no-scroll {
 @media (max-width: 1570px) {
   .benefits .benefits-item__top {
     height: calc(
-        150px + 125 *
+        100px + 50 *
           ((100vw - 360px) / 1210)
       );
   }
@@ -2392,17 +2376,36 @@ body.no-scroll {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-.benefits .benefits-item__title {
-  margin-bottom: 20px;
-  font-weight: 700;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
+.benefits .benefits-item__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  min-height: 65px;
+}
+@media (max-width: 767.98px) {
+  .benefits .benefits-item__title {
+    min-height: auto;
+  }
+}
+.benefits .benefits-item__text {
+  font-size: 16px;
+}
+@media (max-width: 1570px) {
+  .benefits .benefits-item__text {
+    font-size: calc(
+        15px + 1 *
+          ((100vw - 360px) / 1210)
+      );
+  }
+}
+
 .descr {
   padding-top: 140px;
-  font-size: 18px;
+  padding-bottom: 50px;
+  font-size: 17px;
   line-height: 1.25;
 }
 @media (max-width: 1570px) {
@@ -2415,8 +2418,16 @@ body.no-scroll {
 }
 @media (max-width: 1570px) {
   .descr {
+    padding-bottom: calc(
+        40px + 10 *
+          ((100vw - 360px) / 1210)
+      );
+  }
+}
+@media (max-width: 1570px) {
+  .descr {
     font-size: calc(
-        15px + 3 *
+        15px + 2 *
           ((100vw - 360px) / 1210)
       );
   }
