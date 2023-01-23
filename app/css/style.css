@@ -1303,6 +1303,7 @@ body.no-scroll {
           justify-content: center;
   height: 725px;
   padding: 48px 0;
+  height: calc(100vh - 100px);
 }
 @media (max-width: 1300px) {
   .hero__wrapper {
@@ -1340,6 +1341,11 @@ body.no-scroll {
         20px + 28 *
           ((100vw - 360px) / 1210)
       );
+  }
+}
+@media screen and (max-height: 730px) {
+  .hero__location {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 767.98px) {
@@ -1422,6 +1428,11 @@ body.no-scroll {
         30px + 50 *
           ((100vw - 360px) / 1210)
       );
+  }
+}
+@media screen and (max-height: 730px) {
+  .hero__list {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 767.98px) {
