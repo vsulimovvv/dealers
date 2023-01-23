@@ -1378,6 +1378,11 @@ body.no-scroll {
       );
   }
 }
+@media screen and (max-height: 650px) {
+  .hero__title {
+    line-height: 1.6;
+  }
+}
 .hero__title span {
   font-weight: 700;
   color: var(--color-accent);
@@ -1433,6 +1438,11 @@ body.no-scroll {
 @media screen and (max-height: 730px) {
   .hero__list {
     margin-bottom: 50px;
+  }
+}
+@media screen and (max-height: 650px) {
+  .hero__list {
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 767.98px) {
