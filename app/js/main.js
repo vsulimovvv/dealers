@@ -5,6 +5,29 @@ window.addEventListener('DOMContentLoaded', () => {
   //   // * ===== Nice Select
   //   // $('select').niceSelect();
 
+  AOS.init();
+
+  // ShowMoreOrLess
+  (function showMore() {
+    const hidden = document.querySelectorAll('.hidden');
+    const btns = document.querySelectorAll('.descr__show-more');
+
+    btns.forEach((btn) => {
+      if (btn) {
+        btn.addEventListener('click', (e) => {
+          hidden.forEach((el) => {
+            el.classList.toggle('active');
+            if (el.classList.contains('active')) {
+              btn.textContent = 'Показать меньше';
+            } else {
+              btn.textContent = 'Читать далее...';
+            }
+          });
+        });
+      }
+    });
+  })();
+
   // * ===== Slider
   (function slider() {
     const sliderEl = document.querySelectorAll('.descr__slider');

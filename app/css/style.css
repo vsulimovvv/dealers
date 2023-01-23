@@ -221,6 +221,15 @@ body.no-scroll {
   margin: -1px;
 }
 
+.main {
+  margin-top: 100px;
+}
+@media (max-width: 991.98px) {
+  .main {
+    margin-top: 80px;
+  }
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -1085,7 +1094,7 @@ body.no-scroll {
 
 .header {
   padding: 15px 0;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -1275,8 +1284,8 @@ body.no-scroll {
 }
 @media (max-width: 767.98px) {
   .hero::after {
-    background: -o-linear-gradient(358deg, rgba(255, 255, 255, 0.6) 1.46%, rgba(255, 255, 255, 0.9) 13.12%, rgb(255, 255, 255) 60.27%, rgba(217, 217, 217, 0) 190.76%);
-    background: linear-gradient(92deg, rgba(255, 255, 255, 0.6) 1.46%, rgba(255, 255, 255, 0.9) 13.12%, rgb(255, 255, 255) 60.27%, rgba(217, 217, 217, 0) 190.76%);
+    background: -o-linear-gradient(358deg, rgba(255, 255, 255, 0.6) 1.46%, rgba(255, 255, 255, 0.8) 13.12%, rgba(255, 255, 255, 0.85) 60.27%, rgba(217, 217, 217, 0) 190.76%);
+    background: linear-gradient(92deg, rgba(255, 255, 255, 0.6) 1.46%, rgba(255, 255, 255, 0.8) 13.12%, rgba(255, 255, 255, 0.85) 60.27%, rgba(217, 217, 217, 0) 190.76%);
   }
 }
 .hero__wrapper {
@@ -1309,7 +1318,7 @@ body.no-scroll {
 @media (max-width: 767.98px) {
   .hero__wrapper {
     text-align: center;
-    height: 700px;
+    height: 500px;
     width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1331,6 +1340,11 @@ body.no-scroll {
         20px + 28 *
           ((100vw - 360px) / 1210)
       );
+  }
+}
+@media (max-width: 767.98px) {
+  .hero__location {
+    display: none;
   }
 }
 .hero__location img {
@@ -1382,6 +1396,11 @@ body.no-scroll {
         30px + 10 *
           ((100vw - 360px) / 1210)
       );
+  }
+}
+@media (max-width: 767.98px) {
+  .hero__text {
+    display: none;
   }
 }
 .hero__list {
@@ -2462,6 +2481,13 @@ body.no-scroll {
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 767.98px) {
+  .descr__right {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
 .descr__right span {
   display: block;
 }
@@ -2507,6 +2533,10 @@ body.no-scroll {
      object-fit: cover;
   border-radius: 15px;
 }
+.descr__show-more {
+  font-weight: 700;
+  margin: 10px 0;
+}
 .descr--reverse .descr__slider {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -2517,5 +2547,13 @@ body.no-scroll {
     -webkit-box-ordinal-group: initial;
         -ms-flex-order: initial;
             order: initial;
+  }
+}
+@media (max-width: 767.98px) {
+  .descr .hidden {
+    display: none;
+  }
+  .descr .hidden.active {
+    display: block;
   }
 }
