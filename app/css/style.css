@@ -2557,6 +2557,12 @@ body.no-scroll {
 .descr__show-more {
   font-weight: 700;
   margin: 10px 0;
+  display: none;
+}
+@media (max-width: 767.98px) {
+  .descr__show-more {
+    display: block;
+  }
 }
 .descr--reverse .descr__slider {
   -webkit-box-ordinal-group: 2;
